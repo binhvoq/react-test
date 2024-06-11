@@ -5,7 +5,7 @@ function App() {
     const [message, setMessage] = useState('');
 
     useEffect(() => {
-        fetch('http://localhost:5110/HelloWorld')
+        fetch('https://myhelloworldapi1.azurewebsites.net/HelloWorld')
             .then(response => response.text())
             .then(data => setMessage(data))
             .catch(error => console.error('Error fetching data:', error));
